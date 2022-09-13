@@ -1,0 +1,134 @@
+body {
+    /* fallback for old browsers */
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 28px;
+    margin: 0%;
+    background-color: lightgray;
+}
+
+header h1 {
+    width: auto;
+    height: auto;
+    background-color: rgb(100, 154, 233);
+    color: white;
+    font-size: 28px;
+    padding: 2%;
+    margin-bottom: 1px;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: rgb(100, 154, 233);
+    color: white;
+    font-size: 28px;
+}
+
+.item-c {
+    grid-area: sidebar;
+    background-color: rgb(100, 154, 233);
+    color: white;
+    font-size: 28px;
+}
+
+.container button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(100, 154, 233);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.container button:hover,
+.container button:active,
+.container button:focus {
+    background: #6b7db8;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main sidebar sidebar" "footer footer footer footer";
+}
+
+.contenu img {
+    height: 150px;
+    width: 170px;
+    float: left;
+    margin-right: 10px;
+}
+
+.contenu {
+    font-size: medium;
+    margin-bottom: 20px;
+    padding: 2%;
+    height: 20%;
+    background-color: white;
+}
+
+.contenu h1 {
+    font-size: large;
+}
+
+.contenu p {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    left: 0;
+}
+
+.contenu a {
+    float: right;
+}
+
+footer {
+    background-color: rgb(100, 154, 233);
+    color: white;
+    font-size: 15px;
+    padding: 2%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 300px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
